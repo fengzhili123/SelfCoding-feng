@@ -1,0 +1,19 @@
+#设置端口号
+server:
+  port: 10100  #自己设置的端口号
+#注册中心设置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/  #注册中心的地址  在注册中心里面找
+spring:
+  application:
+    name: fengcourseprovider #唯一名称
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_selfcoding?serverTimezone=UTC
+    username: root
+    password: 123
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml

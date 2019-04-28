@@ -1,0 +1,16 @@
+server:
+  port: 18888
+spring:
+  rabbitmq:
+    host: 101.132.136.49
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://localhost:3306/db_selfcoding1807?serverTimezone=UTC
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
